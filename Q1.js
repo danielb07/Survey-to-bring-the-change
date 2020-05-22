@@ -13,9 +13,9 @@ class SurveyQ1 {
         No.position(displayWidth/2,displayHeight/64+200);
         Yes.mousePressed(() =>{
             // Yes.style.backgroundColor = "#000000"
-            // database.ref('Q1').set({
-            //     Yes : 1
-            // })
+            database.ref('Q1').set({
+                Yes : 1
+            })
         })
     }
 }

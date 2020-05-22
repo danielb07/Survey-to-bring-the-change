@@ -3,7 +3,7 @@ class Q2form {
 
     display(){
         var Q2 = createElement('h1');
-        Q2.html("Q2:Do you think that the lockdown idea is perfect")
+        Q2.html("Q2:Should we allow delivery in soicity ??")
         Q2.position(displayWidth/2,displayHeight/4)
 
         var Yes = createButton('YES');
@@ -13,9 +13,9 @@ class Q2form {
         No.position(displayWidth/2,displayHeight/4+200);
         Yes.mousePressed(() =>{
             // Yes.style.backgroundColor = "#000000"
-            // database.ref('Q2').set({
-            //     Yes : 1
-            // })
+            database.ref('Q2').set({
+                Yes : 1
+            })
         })
     }
 }

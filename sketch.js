@@ -10,6 +10,7 @@ function setup(){
     Q1.on("value",readquestion)
     Question1 = new SurveyQ1();
     Question2 = new Q2form();
+    Question3 = new Q3form();
     // q1.on("value");
     
 }
@@ -17,6 +18,7 @@ function setup(){
 function draw() {
     Question1.display();
     Question2.display();
+    Question3.display();
    
 }
 
